@@ -1,12 +1,3 @@
-- task: katalonTask@0
-  inputs:
-    version: '7.9.1'
-    location: '/Applications/Katalon Studio.app'
-    executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15'
-    xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
-trigger:
-- master
-
 pool:
   vmImage: 'vs2017-win2016'
 
