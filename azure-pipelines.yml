@@ -1,6 +1,7 @@
 - task: katalonTask@0
   inputs:
-    location: '/Applications/Katalon Studio.app'
+    location: '/Applications/Katalon Studio.app/Contents/MacOS/config'
+    executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15'
 trigger:
 - master
 
