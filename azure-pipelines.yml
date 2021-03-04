@@ -1,7 +1,9 @@
 - task: katalonTask@0
   inputs:
-    location: '/Applications/Katalon Studio.app/Contents/MacOS/config'
+    version: '7.9.1'
+    location: '/Applications/Katalon Studio.app'
     executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15'
+    xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
 trigger:
 - master
 
@@ -12,5 +14,5 @@ steps:
 - task: katalonTask@0
   displayName: 'Execute Katalon Studio project'
   inputs:
-    version: '7.0.1'
+    version: '7.9.1'
     executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"'
