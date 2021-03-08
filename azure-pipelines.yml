@@ -1,4 +1,8 @@
 pool:
+- task: katalonTask@0
+  inputs:
+    version: '7.9.1'
+    executeArgs: './katalonc -noSplash -runMode=console -projectPath="/Users/rassulsultanbayev/Katalon Studio/My First Web UI Project/My First Web UI Project.prj" -retry=0 -testSuitePath="Test Suites/ChromePic" -executionProfile="default" -browserType="Chrome" -apiKey="838f5f01-03b4-4bfc-991e-323061155f20" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true'
   vmImage: 'vs2017-win2016'
 
 steps:
